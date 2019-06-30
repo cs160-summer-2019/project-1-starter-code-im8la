@@ -1,3 +1,23 @@
-li {
-    color: green;
+.avatar {
+  height: 400px;
+  cursor: pointer;
+}
+
+.container {
+  background-color: coral;
+}
+
+.big {
+  font-size: 3em;
+}
+
+.med {
+  font-size: 2em;
+}
+
+.big-icon {
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
