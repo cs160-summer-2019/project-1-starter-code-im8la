@@ -34,7 +34,10 @@
     <div class="row">
       <div class="col"></div>
       <div class="col">
-        <img src="/static/weather/res/sun_back.png" class="avatar clickable "></div>
+        <a href="http://project-1-starter-code-im8la-yopourquoi801026.codeanyapp.com:3000/weather/forecast/alert/">
+          <img src="/static/weather/res/sun_info.png" class="avatar clickable ">
+        </a>
+      </div>
       <div class="col"></div>
     </div>
 
@@ -48,74 +51,49 @@
       <div class="col-1 med">60</div>
     </div>
 
-    <div class="hscroll border-bottom">
-      <div class="row">
-        <div class="col-2 text-center med">Now</div>
-        <div class="col-2 text-center med">1pm</div>
-        <div class="col-2 text-center med">2pm</div>
-        <div class="col-2 text-center med">3pm</div>
-        <div class="col-2 text-center med">4pm</div>
-        <div class="col-2 text-center med">5pm</div>
-      </div>
-      <div class="row">
-        <div class="col-2"><img src="/static/weather/res/sun-icon.png" class="med-icon"></div>
-        <div class="col-2"><img src="/static/weather/res/sun-icon.png" class="med-icon"></div>
-        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="med-icon"></div>
-        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="med-icon"></div>
-        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="med-icon"></div>
-        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="med-icon"></div>
-      </div>
-      <div class="row">
-        <div class="col-2 text-center med">75</div>
-        <div class="col-2 text-center med">80</div>
-        <div class="col-2 text-center med">78</div>
-        <div class="col-2 text-center med">73</div>
-        <div class="col-2 text-center med">70</div>
-        <div class="col-2 text-center med">68</div>
-      </div>
-    </div>
-    <div class="container-fluid vscroll overflow-auto">
-      <div class="row">
-        <div class="col-2 med">Mon</div>
-        <div class="col-2"><img src="/static/weather/res/sun-icon.png" class="small-icon"></div>
-        <div class="col-5 med"></div>
-        <div class="col-2 med">80</div>
-        <div class="col-1 med">70</div>
-      </div>
-      <div class="row">
-        <div class="col-2 med">Tue</div>
-        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="small-icon"></div>
-        <div class="col-5 med"></div>
-        <div class="col-2 med">75</div>
-        <div class="col-1 med">65</div>
-      </div>
-      <div class="row">
-        <div class="col-2 med">Wed</div>
-        <div class="col-2"><img src="/static/weather/res/rain-icon.png" class="small-icon"></div>
-        <div class="col-5 med"></div>
-        <div class="col-2 med">70</div>
-        <div class="col-1 med">60</div>
-      </div>
-      <div class="row">
-        <div class="col-2 med">Thur</div>
-        <div class="col-2"><img src="/static/weather/res/rain-icon.png" class="small-icon"></div>
-        <div class="col-5 med"></div>
-        <div class="col-2 med">70</div>
-        <div class="col-1 med">55</div>
-      </div>
-      <div class="row">
-        <div class="col-2 med text-left"><img src="/static/weather/res/alert-icon.png" class="alert float-left">Fri</div>
-        <div class="col-2"><img src="/static/weather/res/storm-icon.png" class="small-icon"></div>
-        <div class="col-5 med"></div>
-        <div class="col-2 med">60</div>
-        <div class="col-1 med">55</div>
-      </div>
-      <div class="row">
-        <div class="col-2 med text-left">Sat</div>
-        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="small-icon"></div>
-        <div class="col-5 med"></div>
-        <div class="col-2 med">65</div>
-        <div class="col-1 med">55</div>
+    <div class="row chat-window" id="chat_window_1">
+      <div class="col-xs-12 col-md-12">
+        <div class="panel panel-default">
+          <div class="panel-body msg_container_base">
+
+            <div class="row msg_container base_receive">
+              <div class="col-5">
+                <div class="messages msg_receive">
+                  <p>Good afternoon, David! The weather is great today! How may I help you? </p>
+                  <time>Sunny • 1 min</time>
+                </div>
+              </div>
+            </div>
+
+            <div class="row msg_container base_sent">
+              <div class="col-5">
+                <div class="messages msg_sent">
+                  <p>How's the weather tomorrow in Berkeley?</p>
+                  <time>David • 51 sec</time>
+                </div>
+              </div>
+            </div>
+
+            <div class="row msg_container base_receive">
+              <div class="col-5">
+                <div class="messages msg_receive">
+                  <p>It's looking SPICY! To learn more information, just tap on me above!</p>
+                  <time>Sunny • 45 sec</time>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel-footer">
+            <div class="input-group">
+              <input id="btn-input" type="text" class="form-control input-lg chat_input" placeholder="Write your message here..." />
+              <span class="input-group-btn">
+                        <button class="btn btn-primary btn-lg" id="btn-chat">Send</button>
+              </span>
+            </div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
