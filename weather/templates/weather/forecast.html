@@ -2,42 +2,123 @@
 
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Forecast</title>
-	
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
-	<link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
+  <title>Forecast</title>
+
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/vendors/bootstrap/css/bootstrap.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'weather/css/style.css' %}" />
 
 </head>
+
 <body>
-	<!-- your single-location forecast interface here -->
-  <div class="container">
+  <!-- your single-location forecast interface here -->
+  <div class="container-fluid">
     <div class="row">
-      <div class="col"><img src="/static/weather/res/chat-icon.png" class="text-center big-icon"></div>
-      <div class="col"><img src="/static/weather/res/trip-icon.png" class="text-center big-icon"></div>
-      <div class="col"><img src="/static/weather/res/like-icon.png" class="text-center big-icon"></div>
+      <div class="col-4"><img src="/static/weather/res/chat-icon.png" class="big-icon clickable"></div>
+      <div class="col-4"><img src="/static/weather/res/trip-icon.png" class="big-icon clickable"></div>
+      <div class="col-4"><img src="/static/weather/res/like-icon.png" class="big-icon clickable"></div>
     </div>
-    <div class="row">
-      <div class="col"><p class="med text-center">Chat</p> </div>
-      <div class="col"><p class="med text-center">Trips</p> </div>
-      <div class="col"><p class="med text-center">Likes</p> </div>
+    <div class="row border-bottom">
+      <div class="col">
+        <p class="med text-center clickable">Chat</p>
+      </div>
+      <div class="col">
+        <p class="med text-center clickable">Trips</p>
+      </div>
+      <div class="col">
+        <p class="med text-center clickable">Likes</p>
+      </div>
     </div>
-    
+
     <div class="row">
       <div class="col"></div>
       <div class="col">
-        <img src="/static/weather/res/sun_back.png" class="avatar"></div>
+        <img src="/static/weather/res/sun_back.png" class="avatar clickable "></div>
       <div class="col"></div>
     </div>
-    
-    <p class="big text-center">Berkeley, 75°</p> 
-    
-    <div class="row"></div>
+
+    <p class="big text-center">Berkeley, 75°</p>
+
+    <div class="row border-bottom">
+      <div class="col-2 med">Today</div>
+      <div class="col-2 med">Sun</div>
+      <div class="col-5 med"></div>
+      <div class="col-2 med">80</div>
+      <div class="col-1 med">60</div>
+    </div>
+
+    <div class="hscroll border-bottom">
+      <div class="row">
+        <div class="col-2 text-center med">Now</div>
+        <div class="col-2 text-center med">1pm</div>
+        <div class="col-2 text-center med">2pm</div>
+        <div class="col-2 text-center med">3pm</div>
+        <div class="col-2 text-center med">4pm</div>
+        <div class="col-2 text-center med">5pm</div>
+      </div>
+      <div class="row">
+        <div class="col-2"><img src="/static/weather/res/sun-icon.png" class="med-icon"></div>
+        <div class="col-2"><img src="/static/weather/res/sun-icon.png" class="med-icon"></div>
+        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="med-icon"></div>
+        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="med-icon"></div>
+        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="med-icon"></div>
+        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="med-icon"></div>
+      </div>
+      <div class="row">
+        <div class="col-2 text-center med">75</div>
+        <div class="col-2 text-center med">80</div>
+        <div class="col-2 text-center med">78</div>
+        <div class="col-2 text-center med">73</div>
+        <div class="col-2 text-center med">70</div>
+        <div class="col-2 text-center med">68</div>
+      </div>
+    </div>
+    <div class="container-fluid vscroll overflow-auto">
+      <div class="row">
+        <div class="col-2 med">Mon</div>
+        <div class="col-2"><img src="/static/weather/res/sun-icon.png" class="small-icon"></div>
+        <div class="col-5 med"></div>
+        <div class="col-2 med">80</div>
+        <div class="col-1 med">70</div>
+      </div>
+      <div class="row">
+        <div class="col-2 med">Tue</div>
+        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="small-icon"></div>
+        <div class="col-5 med"></div>
+        <div class="col-2 med">75</div>
+        <div class="col-1 med">65</div>
+      </div>
+      <div class="row">
+        <div class="col-2 med">Wed</div>
+        <div class="col-2"><img src="/static/weather/res/rain-icon.png" class="small-icon"></div>
+        <div class="col-5 med"></div>
+        <div class="col-2 med">70</div>
+        <div class="col-1 med">60</div>
+      </div>
+      <div class="row">
+        <div class="col-2 med">Thur</div>
+        <div class="col-2"><img src="/static/weather/res/rain-icon.png" class="small-icon"></div>
+        <div class="col-5 med"></div>
+        <div class="col-2 med">70</div>
+        <div class="col-1 med">55</div>
+      </div>
+      <div class="row">
+        <div class="col-2 med text-left"><img src="/static/weather/res/alert-icon.png" class="alert float-left">Fri</div>
+        <div class="col-2"><img src="/static/weather/res/storm-icon.png" class="small-icon"></div>
+        <div class="col-5 med"></div>
+        <div class="col-2 med">60</div>
+        <div class="col-1 med">55</div>
+      </div>
+      <div class="row">
+        <div class="col-2 med text-left">Sat</div>
+        <div class="col-2"><img src="/static/weather/res/cloudy-icon.png" class="small-icon"></div>
+        <div class="col-5 med"></div>
+        <div class="col-2 med">65</div>
+        <div class="col-1 med">55</div>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>
-
-
-
-
-
